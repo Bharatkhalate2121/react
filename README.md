@@ -13,7 +13,7 @@ This repository contains multiple frontend projects implemented using React. The
 ├── react+js
 │ ├── sknscoe-landing-page
 │ └── kanban-board-js
-
+```
 ---
 
 ## 📦 Projects Overview
