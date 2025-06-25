@@ -1,0 +1,44 @@
+# Ignore node_modules in all subfolders
+**/node_modules/
+
+# Ignore build and dist directories in all subfolders
+**/build/
+**/dist/
+
+# Logs
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+
+# Environment files
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Cache and temporary folders
+**/.cache/
+**/.parcel-cache/
+**/.next/
+**/out/
+
+# IDE files
+**/.vscode/
+**/.idea/
+*.iml
+
+# OS generated files
+**/.DS_Store
+**/Thumbs.db
+
+# Test and Storybook output
+**/coverage/
+**/*.snap
+
+# TypeScript cache
+**/*.tsbuildinfo
+
+# Optional lockfiles (uncomment if only one package manager is used)
+# **/package-lock.json
+# **/yarn.lock
+# **/pnpm-lock.yaml

@@ -1,0 +1,241 @@
+/* component.css */
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Container Class for centralized content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Navbar Styles */
+nav {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #ddd;
+}
+
+/* Form Styling */
+form {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+form div {
+  margin-bottom: 1rem;
+}
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+form button:hover {
+  background: #555;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: #fff;
+}
+table th,
+table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+table th {
+  background: #f8f8f8;
+}
+
+/* Responsive Table: Convert to block layout on small screens */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  table, thead, tbody, th, td, tr {
+      display: block;
+  }
+  
+  table tr {
+      margin-bottom: 1rem;
+  }
+  
+  table td {
+      padding-left: 50%;
+      position: relative;
+  }
+  
+  table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 0.5rem;
+      font-weight: bold;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+/* Delete Employee, View Employee By ID, View Employee By First Name */
+.employee-container {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 1rem auto;
+}
+
+/* Heading */
+.employee-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Input Fields */
+.employee-container input[type="text"] {
+  width: 90%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.employee-container input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+/* Buttons */
+.employee-container button {
+  width: 90%;
+  padding: 0.75rem;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.employee-container button:hover {
+  background: #0056b3;
+}
+
+/* Messages */
+.employee-container p {
+  font-size: 1rem;
+  color: red;
+  margin-top: 0.5rem;
+}
+
+/* Employee Details */
+.employee-details {
+  background: #f8f8f8;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.employee-details p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+/* Delete Employee Button */
+.delete-button {
+  background: red;
+}
+
+.delete-button:hover {
+  background: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .employee-container {
+      width: 95%;
+  }
+  
+  .employee-container input[type="text"], 
+  .employee-container button {
+      width: 100%;
+  }
+}
